@@ -57,7 +57,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "dev": "npm run build && npm run watch",
+    "dev": "npm run build",
     "build": "npm run build:schema && npm run build:browser",
     "build:schema": "node ./utils/updateSchema.js",
     "build:browser": "browserify browser.js -o public/bundle.js",
